@@ -1,0 +1,3 @@
+include ':com-talha-android-util-application'
+include ':app'
+rootProject.name = "AndroidLibraries"

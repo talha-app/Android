@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.talha.customdatabindingapplication.viewmodel.Device" />
+        <import type="com.talha.customdatabindingapplication.converter.DeviceStatusConverter"/>
+        <import type="com.talha.customdatabindingapplication.converter.IntStringConverter" />
+        <import type="com.talha.customdatabindingapplication.converter.LocalDateStringConverter" />
+
+        <variable
+            name="device"
+            type="com.talha.customdatabindingapplication.viewmodel.Device" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.talha.customdatabindingapplication.MainActivity">
+
+
+        <Spinner
+            android:id="@+id/mainActivitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:selectedItemPosition="@={DeviceStatusConverter.toInt(device.status)}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cihaz Adı"
+            android:text="@={device.name}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cihaz Ip'si"
+            android:inputType="number"
+            android:text="@={device.host}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="port no"
+            android:inputType="number"
+            android:text="@={IntStringConverter.IntToString(device.port)}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tarih"
+            android:inputType="text"
+            android:text="@={LocalDateStringConverter.toString(device.registerDate)}" />
+
+    </LinearLayout>
+</layout>

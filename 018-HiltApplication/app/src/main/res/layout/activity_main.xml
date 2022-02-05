@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.talha.app.application.IntToStringConverter" />
+        <import type="com.talha.app.application.viewmodel.RandomInfo" />
+        <import type="com.talha.app.application.viewmodel.ResultInfo" />
+
+        <variable
+            name="randomInfo"
+            type="com.talha.app.application.viewmodel.RandomInfo" />
+        <variable
+            name="randomResultInfo"
+            type="com.talha.app.application.viewmodel.ResultInfo" />
+        <variable
+            name="threalLocalRandomResultInfo"
+            type="com.talha.app.application.viewmodel.ResultInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.talha.app.application.MainActivity">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Min"
+            android:inputType="number"
+            android:text="@={IntToStringConverter.intToString(randomInfo.min)}" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Max"
+            android:inputType="number"
+            android:text="@={IntToStringConverter.intToString(randomInfo.max)}" />
+
+        <Button
+            android:onClick="onDisplayButtonClicked"
+            android:id="@+id/mainActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Göster" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{IntToStringConverter.intToString(randomResultInfo.result)}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{IntToStringConverter.intToString(threalLocalRandomResultInfo.result)}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{randomResultInfo.dateTime.toString()}" />
+
+
+    </LinearLayout>
+</layout>

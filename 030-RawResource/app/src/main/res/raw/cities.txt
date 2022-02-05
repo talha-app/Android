@@ -1,0 +1,6 @@
+istanbul
+ankara
+izmir
+düzce
+mersin
+kocaeli

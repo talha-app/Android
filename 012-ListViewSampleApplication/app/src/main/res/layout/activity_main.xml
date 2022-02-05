@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/mainActivityEditTextCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Şehir ismi" />
+
+    <EditText
+        android:id="@+id/mainActivityEditTextCityPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Plaka" />
+
+    <EditText
+        android:id="@+id/mainActivityEditTextCityPhoneCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Telefon Kodu" />
+
+
+    <Button
+        android:onClick="onAddWithAdapterButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle - Adapter" />
+
+    <Button
+        android:id = "@+id/mainActivityButtonClear"
+        android:onClick="onClearButtonClicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Temizle" />
+
+    <ListView
+        android:id="@+id/mainActivityListViewNames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

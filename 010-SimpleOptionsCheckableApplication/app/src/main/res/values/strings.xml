@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SimpleMenuApplication</string>
+    <string name="mainactivity_menu_setting">Ayarlar</string>
+    <string name="mainactivity_menu_about">Hakkinda</string>
+    <string name="mainactivity_menu_exit">Çıkış</string>
+</resources>

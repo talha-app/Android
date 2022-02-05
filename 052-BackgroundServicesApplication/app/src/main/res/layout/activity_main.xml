@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/mainActivityEditTextCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="5"
+        android:hint="Count"/>
+
+    <EditText
+        android:id="@+id/mainActivityEditTextMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:hint="Min"
+        />
+
+    <EditText
+        android:id="@+id/mainActivityEditTextMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="50"
+        android:hint="Max"/>
+
+    <EditText
+        android:id="@+id/mainActivityEditTextFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="file.txt"
+        android:hint="FileName"/>
+
+    <Button
+        android:id="@+id/mainActivityButtonStartService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Services" />
+
+    <Button
+        android:id="@+id/mainActivityButtonGetNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Numbers" />
+
+    <TextView
+        android:id="@+id/mainActivityTextViewNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numbers" />
+
+</LinearLayout>

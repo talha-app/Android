@@ -1,0 +1,9 @@
+<resources>
+    <!--
+
+    -->
+    <string name="app_name">OpenOtherActivity-008</string>
+    <string name="mainactivity_button_open_second_activity_text">Open Second Activty</string>
+    <string name="mainactivity_button_open_third_activity_text">Open Third Activty</string>
+
+</resources>

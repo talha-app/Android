@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.talha.databindingapplicaiton.MainActivity">
+
+
+    <group >
+        <item
+            android:id="@+id/mainActivityMenuItemDisplay"
+            android:orderInCategory="1"
+            android:title="ayarlar"
+            app:showAsAction="collapseActionView" />
+
+        <item
+            android:id="@+id/mainActivityMenuItemAbout"
+            android:orderInCategory="2"
+            android:title="hakkında"
+            app:showAsAction="collapseActionView" />
+
+        <item
+            android:id="@+id/mainActivityMenuItemExit"
+            android:orderInCategory="3"
+            android:title="çıkış"
+            app:showAsAction="collapseActionView" />
+    </group>
+</menu>

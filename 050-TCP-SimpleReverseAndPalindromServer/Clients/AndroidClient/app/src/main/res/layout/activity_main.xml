@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/mainActivityEditTextHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="192.168.1.37"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/mainActivityEditTextWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="test"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/mainActivityRadioGroupServers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/mainActivityRadioButtonReverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reverse" />
+
+        <RadioButton
+            android:id="@+id/mainActivityRadioButtonPalindrome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Palindrome" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/mainActivityButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+
+    <TextView
+        android:id="@+id/mainActivitytextViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
